@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\GoalController.cs" />
     <Compile Include="Assets\Scripts\MAIN.cs" />
     <Compile Include="Assets\Scripts\PointerController.cs" />
+    <None Include="Assets\Low Poly Car Set 2 - Tuningcars\readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/kumar/Documents/Unity Projects/Ratchet League/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

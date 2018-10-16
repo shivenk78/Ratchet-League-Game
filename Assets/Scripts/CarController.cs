@@ -30,12 +30,12 @@ public class CarController : MonoBehaviour {
         if (Input.GetKey(forward))
         {
             //rb.velocity = new Vector3(speed, rb.velocity.y, rb.velocity.z);
-            rb.AddRelativeForce(new Vector3(speed, 0.0f, 0.0f));
+            rb.AddRelativeForce(new Vector3(0.0f, 0.0f, -speed));
         }
         else if (Input.GetKey(back))
         {
             //rb.velocity = new Vector3(-speed, rb.velocity.y, rb.velocity.z);
-            rb.AddRelativeForce(new Vector3(-speed, 0.0f, 0.0f));
+            rb.AddRelativeForce(new Vector3(0.0f, 0.0f, speed));
         }
 
         if (Input.GetKey(turnLeft))
@@ -51,11 +51,11 @@ public class CarController : MonoBehaviour {
     public void Reset()
     {
         transform.position = new Vector3(initialX, initialY, initialZ);
-        if(name=="CAR")
-            transform.rotation = new Quaternion(0, 0, 0, 1);
+        if(name=="Blue Car")
+            transform.rotation = new Quaternion(0, 90, 0, 1);
         else
-            transform.rotation = new Quaternion(0, 180, 0, 1);
+            transform.rotation = new Quaternion(0, -90, 0, 1);
 
-        rb.ResetInertiaTensor();
+        
     }
 }
