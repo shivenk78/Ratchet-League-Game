@@ -26,7 +26,7 @@ public class MAIN : MonoBehaviour {
     {
         redCar.GetComponent<CarController>().Reset();
         blueCar.GetComponent<CarController>().Reset();
-        ball.transform.position = new Vector3(0.0f, 20.0f, 0.0f);
+        ball.transform.position = new Vector3(0.0f, 1.0f, 0.0f);
         ball.GetComponent<Rigidbody>().velocity = new Vector3(0.0f,0.0f,0.0f);
     }
 }
